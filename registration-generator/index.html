@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Generate aircraft registration">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="//global-team.github.io/tools/favicon.ico">
+  <title>Airlines Manager aircraft registration generator</title>
+</head>
+<body>
+  
+  <h1>Aircraft registration generator</h1>
+  
+  <p>
+    This page generates a new registration every two seconds.
+    Pick a country and copy-paste the registrations when naming your aircraft in Airlines Manager.
+  </p>
+  
+  <h2>Options</h2>
+  
+  <strong>Country</strong>
+  <select id="country" onChange="countryChange()"></select>
+  
+  <br /><br />
+  
+  <strong>Aircraft type</strong>
+  <select id="aircraftType">
+    <option value="prop">Prop</option>
+    <option value="jet">Jet</option>
+  </select>
+
+  <h2>Registration</h2>
+  
+  <input type="text" id="registration"></input>
+  <input type="button" value="Copy to clipboard" onClick="copyToClipboard()"></input>
+  
+  <h2>Information</h2>
+  <p>
+    You can find out more about aircraft registrations on Wikipedia.
+  </p>
+  <a href="https://en.wikipedia.org/wiki/List_of_aircraft_registration_prefixes">https://en.wikipedia.org/wiki/List_of_aircraft_registration_prefixes</a>
+
+  <p>
+    <i>Made by Global Team</i>
+  </p>
+
+  <script src="generator.js"></script>
+  <!-- <script src="//global-team.github.io/tools/registration-generator/generator.js"></script> -->
+</body>
+</html>
